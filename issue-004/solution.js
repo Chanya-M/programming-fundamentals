@@ -1,16 +1,16 @@
-function grade(a) {
+function grade(s) {
     // implement your solution here
-    if (a >= 80 && a <= 100 ) {
+    if (s >= 80 && s <= 100 ) {
     	return 'A';
-    } else if (a >= 60) {
+    } else if (s >= 60) {
     	return 'B';
-    } else if (a >= 50) {
+    } else if (s >= 50) {
     	return 'C';
-    } else if (a >= 40) {
+    } else if (s >= 40) {
     	return 'D';
-    } else if (a >= 30) {
+    } else if (s >= 30) {
     	return 'E';
-    } else if (a >= 0) {
+    } else if (s >= 0) {
     	return 'F';
     }
 }
