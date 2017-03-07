@@ -1,4 +1,5 @@
 // implement your solution here
-function hello() {
-
+function hello(person) {
+	var name = person || 'world';
+	return 'Hello ' + name + '!';
 }
