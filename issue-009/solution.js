@@ -9,6 +9,6 @@ function sumEven(a) {
 	});
 	var total = arrEven.reduce(function (accumulator, value){
 			return accumulator + value;
-	}, 0)
+	}, 0);
 	return total;
 }
