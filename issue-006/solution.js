@@ -2,7 +2,7 @@
 function selectSum(a) {
 	total = 0;
 	a.forEach(function(element) {
-		if (!isNaN(element)){
+		if (typeof(element) == 'numbers'){
 			total += element;
 		}
 	});
