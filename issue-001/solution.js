@@ -2,7 +2,7 @@ function dataTypeCheck(a) {
     // implement your solution here
     type = typeof(a)
     if (type === 'number') {
-        if (parseFloat(a) == a) {
+        if (parseInt(a, 10) == a) {
     	    //check for integer datatypes
     	    if ( a % 1 === 0 ){
     		    return a / 2
