@@ -1,4 +1,4 @@
 // implement your solution here
-function hello() {
-
+function hello(person='world') {
+	return 'Hello ' + person + '!';
 }
