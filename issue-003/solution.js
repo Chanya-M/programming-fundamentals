@@ -1,6 +1,6 @@
 function product(a, b) {
     // implement your solution here
-    if (!isNaN(a) && !isNaN(b)) {
+    if (typeof(a) === 'numbers' && typeof(b) === 'numbers') {
 		return a * b;
 	}
 	else {
