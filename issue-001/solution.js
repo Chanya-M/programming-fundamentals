@@ -2,14 +2,16 @@ function dataTypeCheck(a) {
     // implement your solution here
     type = typeof(a)
     if (type === 'number') {
-    	//check for integer datatypes
-    	if ( a % 1 === 0 ){
-    		return a / 2
-    	}
-    	//check for float datatypes
-    	else if (parseFloat(a) == a) {
-    		return a * 2;
-    	} 
+        if (parseFloat(a) == a) {
+    	    //check for integer datatypes
+    	    if ( a % 1 === 0 ){
+    		    return a / 2
+    	    }
+    	    //check for float datatypes
+    	    else {
+    		    return a * 2;
+    	    }
+        }
     	//check for NaN datatypes
     	else {
     		return 0;
