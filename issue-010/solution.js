@@ -1,21 +1,12 @@
 // implement your solution here
 function evenOdd(a) {
-	//initialize new array to hold even numbers
-	var arrEven = [];
-	//initialize new array to hold odd numbers
-	var arrOdd = [];
-	a.forEach(function(element) {
-		if (element%2 === 0){
-			arrEven.push(element);
+	var sum = 0;
+	a.reduce(function (accumulator, value){
+		if (sum % 2 === 0){
+			sum += value;
 		} else {
-			arrOdd.push(element);
+			sum -= value;
 		}
-	});
-	var sumEven = arrEven.reduce(function (accumulator, value){
-			return accumulator + value;
 	}, 0);
-	var sumOdd = arrOdd.reduce(function (accumulator, value){
-			return accumulator + value;
-	}, 0);
-	return sumEven - sumOdd;
+	return sum;
 }
