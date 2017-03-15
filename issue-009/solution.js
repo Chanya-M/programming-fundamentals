@@ -1,14 +1,10 @@
 // implement your solution here
 function sumEven(a) {
-	//create new array, from given array, with only even numbers
-	var arrEven = [];
-	a.forEach(function(element) {
-		if (element%2 === 0){
-			arrEven.push(element);
+	var sum = 0;
+	a.reduce(function (accumulator, value){
+		if (value % 2 == 0){
+			sum += value;
 		}
-	});
-	var total = arrEven.reduce(function (accumulator, value){
-			return accumulator + value;
 	}, 0);
-	return total;
+	return sum;
 }
